@@ -27,7 +27,7 @@ class DatabaseHandler (context: Context) :
     }//4
 
     override fun onCreate(db: SQLiteDatabase?) {
-        val CREATE_LIBRARY_TABLE = ("CREATE TABLE" + TABLE_LIBRARY + "("
+        val CREATE_LIBRARY_TABLE = ("CREATE TABLE " + TABLE_LIBRARY + "("
                 + KEY_ID + " INTEGER PRIMARY KEY," + KEY_TITLE + " TEXT,"
                 + KEY_AUTHOR + " TEXT," + KEY_YEAR_PUBLISHED + " TEXT," +
                 KEY_PUBLISHER + " TEXT" + ")")
@@ -53,5 +53,5 @@ class DatabaseHandler (context: Context) :
 
         db.close()
         return success
-    }//7
+    }
 }
